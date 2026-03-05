@@ -27,3 +27,16 @@ qc/
 reference/
 trimmed/
 variants/
+
+
+## Workflow Diagram
+
+```mermaid
+flowchart TD
+    A[FASTQ Reads] --> B[FastQC Quality Check]
+    B --> C[fastp Read Trimming]
+    C --> D[BWA Alignment]
+    D --> E[SAMtools Sorting and Indexing]
+    E --> F[BCFtools Variant Calling]
+    F --> G[VCF Variant Output]
+```
