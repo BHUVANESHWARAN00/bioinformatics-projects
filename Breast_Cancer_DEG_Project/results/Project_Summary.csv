@@ -1,0 +1,9 @@
+"Metric","Value"
+"Total Samples",296
+"Normal Samples",148
+"Tumor Samples",148
+"Genes Before Filtering",62976
+"Genes After Filtering",9356
+"Significant Genes",646
+"Upregulated Genes",325
+"Downregulated Genes",321
