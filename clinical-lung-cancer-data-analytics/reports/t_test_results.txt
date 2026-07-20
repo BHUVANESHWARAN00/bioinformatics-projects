@@ -1,0 +1,12 @@
+
+	Welch Two Sample t-test
+
+data:  mutation_count by sex
+t = -1.531, df = 470.34, p-value = 0.1264
+alternative hypothesis: true difference in means between group Female and group Male is not equal to 0
+95 percent confidence interval:
+ -78.927289   9.799084
+sample estimates:
+mean in group Female   mean in group Male 
+            226.0513             260.6154 
+

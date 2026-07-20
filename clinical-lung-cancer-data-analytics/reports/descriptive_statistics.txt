@@ -1,0 +1,48 @@
+  patient_id        diagnosis_age       sex            race_category     
+ Length:569         Min.   :33.00   Length:569         Length:569        
+ Class :character   1st Qu.:59.00   Class :character   Class :character  
+ Mode  :character   Median :66.00   Mode  :character   Mode  :character  
+                    Mean   :65.22                                        
+                    3rd Qu.:72.00                                        
+                    Max.   :88.00                                        
+                    NA's   :81                                           
+ ethnicity_category  years_smoked     pack_years     ajcc_pathologic_stage
+ Length:569         Min.   : 0.00   Min.   :  0.00   Length:569           
+ Class :character   1st Qu.: 0.00   1st Qu.:  0.00   Class :character     
+ Mode  :character   Median : 0.00   Median : 20.00   Mode  :character     
+                    Mean   :10.79   Mean   : 26.03                        
+                    3rd Qu.:24.00   3rd Qu.: 40.50                        
+                    Max.   :64.00   Max.   :154.00                        
+                                                                          
+ ajcc_pathologic_t_stage ajcc_pathologic_n_stage ajcc_pathologic_m_stage
+ Length:569              Length:569              Length:569             
+ Class :character        Class :character        Class :character       
+ Mode  :character        Mode  :character        Mode  :character       
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+ primary_diagnosis  overall_survival_months overall_survival_status
+ Length:569         Min.   :  0.00          Length:569             
+ Class :character   1st Qu.: 13.67          Class :character       
+ Mode  :character   Median : 21.50          Mode  :character       
+                    Mean   : 29.69                                 
+                    3rd Qu.: 37.09                                 
+                    Max.   :238.11                                 
+                    NA's   :59                                     
+ disease_free_months disease_free_status mutation_count   fraction_genome_altered
+ Min.   :  0.00      Length:569          Min.   :   1.0   Min.   :0.0000         
+ 1st Qu.: 13.64      Class :character    1st Qu.:  67.0   1st Qu.:0.1185         
+ Median : 20.09      Mode  :character    Median : 161.0   Median :0.2539         
+ Mean   : 30.35                          Mean   : 241.3   Mean   :0.2750         
+ 3rd Qu.: 37.50                          3rd Qu.: 321.0   3rd Qu.:0.4098         
+ Max.   :238.29                          Max.   :1880.0   Max.   :0.7913         
+ NA's   :279                             NA's   :12       NA's   :51             
+ vital_status       year_of_diagnosis  age_group        
+ Length:569         Min.   :1991      Length:569        
+ Class :character   1st Qu.:2007      Class :character  
+ Mode  :character   Median :2010      Mode  :character  
+                    Mean   :2008                        
+                    3rd Qu.:2011                        
+                    Max.   :2013                        
+                    NA's   :60                          

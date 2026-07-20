@@ -1,0 +1,16 @@
+Call:
+survdiff(formula = Surv(overall_survival_months, event) ~ ajcc_pathologic_stage, 
+    data = stage_data)
+
+                                   N Observed Expected (O-E)^2/E (O-E)^2/V
+ajcc_pathologic_stage=Stage I      5        1    2.140     0.607     0.631
+ajcc_pathologic_stage=Stage IA   133       29   51.857    10.075    14.117
+ajcc_pathologic_stage=Stage IB   136       36   58.869     8.884    13.293
+ajcc_pathologic_stage=Stage II     1        1    0.261     2.090     2.096
+ajcc_pathologic_stage=Stage IIA   50       21   12.726     5.380     5.835
+ajcc_pathologic_stage=Stage IIB   70       32   26.234     1.267     1.491
+ajcc_pathologic_stage=Stage IIIA  70       39   18.639    22.242    25.028
+ajcc_pathologic_stage=Stage IIIB  11        7    3.873     2.524     2.595
+ajcc_pathologic_stage=Stage IV    26       16    7.400     9.994    10.465
+
+ Chisq= 64.3  on 8 degrees of freedom, p= 7e-11 

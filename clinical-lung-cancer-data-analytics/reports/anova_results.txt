@@ -1,0 +1,4 @@
+                       Df   Sum Sq Mean Sq F value Pr(>F)
+ajcc_pathologic_stage   8   398689   49836   0.776  0.624
+Residuals             490 31480529   64246               
+70 observations deleted due to missingness

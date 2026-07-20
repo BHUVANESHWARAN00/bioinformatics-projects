@@ -1,0 +1,6 @@
+
+	Pearson's Chi-squared test
+
+data:  stage_table
+X-squared = 13.739, df = 8, p-value = 0.08882
+

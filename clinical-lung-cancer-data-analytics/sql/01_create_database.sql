@@ -1,0 +1,3 @@
+CREATE DATABASE clinical_cancer_analytics;
+
+USE clinical_cancer_analytics;

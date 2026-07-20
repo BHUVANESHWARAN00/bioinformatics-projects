@@ -1,0 +1,28 @@
+# Input load. Please do not change #
+`dataset` = read.csv('C:/Users/Bhuvaneshwaran/REditorWrapper_c202588a-3045-4819-aee9-a6e4e3b14a9d/input_df_5e8189fd-caca-482c-ba24-5a8be48f128e.csv', check.names = FALSE, encoding = "UTF-8", blank.lines.skip = FALSE);
+# Original Script. Please update your script content here and once completed copy below section back to the original editing window #
+# The following code to create a dataframe and remove duplicated rows is always executed and acts as a preamble for your script: 
+
+# dataset <- data.frame(overall_survival_months (bins), vital_status)
+# dataset <- unique(dataset)
+
+# Paste or type your script code here:library(survival)
+
+ClinicalData$vital_status <- ifelse(
+  ClinicalData$vital_status == "Dead", 1, 0
+)
+
+fit <- survfit(
+  Surv(overall_survival_months, vital_status) ~ 1,
+  data = ClinicalData
+)
+
+plot(
+  fit,
+  xlab = "Survival Months",
+  ylab = "Survival Probability",
+  main = "Kaplan-Meier Survival Curve",
+  col = "blue",
+  lwd = 3
+)
+

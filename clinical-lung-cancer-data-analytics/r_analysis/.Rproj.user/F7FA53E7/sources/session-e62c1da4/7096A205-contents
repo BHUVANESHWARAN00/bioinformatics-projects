@@ -1,0 +1,31 @@
+# Input load. Please do not change #
+`dataset` = read.csv('C:/Users/Bhuvaneshwaran/REditorWrapper_e2b296d3-32e6-4eec-a45e-6dff49122a7c/input_df_48d98a0a-ef53-465c-b42e-4ca424a02b52.csv', check.names = FALSE, encoding = "UTF-8", blank.lines.skip = FALSE);
+# Original Script. Please update your script content here and once completed copy below section back to the original editing window #
+# The following code to create a dataframe and remove duplicated rows is always executed and acts as a preamble for your script: 
+
+# dataset <- data.frame(overall_survival_months (bins), vital_status)
+# dataset <- unique(dataset)
+
+# Paste or type your script code here:library(survival)
+
+# Convert Alive/Dead to 0/1
+dataset$vital_status <- ifelse(dataset$vital_status == "Dead", 1, 0)
+
+# Remove missing values
+dataset <- na.omit(dataset)
+
+# Fit Kaplan-Meier model
+fit <- survfit(
+  Surv(overall_survival_months, vital_status) ~ 1,
+  data = dataset
+)
+
+# Plot
+plot(
+  fit,
+  main = "Kaplan-Meier Survival Curve",
+  xlab = "Survival Months",
+  ylab = "Survival Probability",
+  col = "blue",
+  lwd = 2
+)

@@ -1,0 +1,12 @@
+
+	Pearson's product-moment correlation
+
+data:  clinical_data$years_smoked and clinical_data$mutation_count
+t = 1.1679, df = 555, p-value = 0.2434
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.0337040  0.1320494
+sample estimates:
+      cor 
+0.0495136 
+

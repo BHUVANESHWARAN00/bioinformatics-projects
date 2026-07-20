@@ -1,0 +1,12 @@
+
+	Pearson's product-moment correlation
+
+data:  clinical_data$pack_years and clinical_data$mutation_count
+t = 4.6676, df = 555, p-value = 3.824e-06
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.1130997 0.2730231
+sample estimates:
+      cor 
+0.1943525 
+
